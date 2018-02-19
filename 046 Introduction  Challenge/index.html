@@ -9,19 +9,21 @@
 <body>
 <div id="app">
     <section class="row">
-        <div class="small-6 columns">
+        <div class="small-6 columns" id='player'>
             <h1 class="text-center">YOU</h1>
             <div class="healthbar">
-                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
-
+                <div class="healthbar text-center"
+                    style="background-color: green; margin: 0; color: white;"
+                    :style='playerProgressBar'>
                 </div>
             </div>
         </div>
-        <div class="small-6 columns">
+        <div class="small-6 columns" id='foe'>
             <h1 class="text-center">MONSTER</h1>
             <div class="healthbar">
-                <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;">
-
+                <div class="healthbar text-center"
+                    style="background-color: green; margin: 0; color: white;"
+                    :style='foeProgressBar'>
                 </div>
             </div>
         </div>
@@ -49,5 +51,8 @@
         </div>
     </section>
 </div>
+
+<script src="js/app.js"></script>
+
 </body>
 </html>
